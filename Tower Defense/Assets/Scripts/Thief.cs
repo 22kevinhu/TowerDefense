@@ -5,8 +5,14 @@ using UnityEngine;
 public class Thief : MonoBehaviour
 {
     public Rigidbody2D thiefRb;
-    public float Speed;
-    public int Health;
+    public float speed;
+    public int health;
+
+    void Start()
+    {
+        speed = 10
+        health = 10
+    }
 
    void FixedUpdate() 
     {
