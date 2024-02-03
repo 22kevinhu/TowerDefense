@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Knight : MonoBehaviour
 {
-    public int Health;
-    public int Speed;
+    public int health;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,9 @@ public class Knight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        while (health != 0) {
+            transform.position += Time.deltaTime * Vector3.left * speed;
+        }
+
     }
 }
