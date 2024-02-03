@@ -9,6 +9,6 @@ public class Thief : MonoBehaviour
     public int health;
     void FixedUpdate() 
     {
-        thiefRb.velocity = Vector2.left * speed;  
+        thiefRb.velocity = Vector2.left * speed * Time.deltaTime;  
     } 
 }
