@@ -5,13 +5,13 @@ using UnityEngine;
 public class Thief : MonoBehaviour
 {
     public Rigidbody2D thiefRb;
-    public float speed;
-    public int health;
+    public float Speed;
+    public int Health;
 
    void FixedUpdate() 
     {
-        while (health != 0) {
-            transform.position += Time.deltaTime * Vector3.left * speed;
+        while (Health != 0) {
+            transform.position += Time.deltaTime * Vector3.left * Speed;
         }
 
     }
