@@ -43,7 +43,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2197554336508131066}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thiefRb: {fileID: 3413020210601038011}
+  speed: 0
+  health: 0
 --- !u!1 &8464195258409010844
 GameObject:
   m_ObjectHideFlags: 0
