@@ -5,16 +5,19 @@ using UnityEngine;
 public class leftTower : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 100;
+    public int maxHealth;
     // Start is called before the first frame update
     void Start()
     {
-        
+      health = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
