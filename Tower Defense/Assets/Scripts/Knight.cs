@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Knight : MonoBehaviour
 {
+    public int Health;
+    public int Speed;
     // Start is called before the first frame update
     void Start()
     {
