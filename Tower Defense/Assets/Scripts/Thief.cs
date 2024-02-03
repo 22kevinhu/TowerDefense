@@ -7,8 +7,12 @@ public class Thief : MonoBehaviour
     public Rigidbody2D thiefRb;
     public float speed;
     public int health;
-    void FixedUpdate() 
+
+   void FixedUpdate() 
     {
-        thiefRb.velocity = Vector2.left * speed * Time.deltaTime;  
-    } 
+        while (health != 0) {
+            transform.position += Time.deltaTime * Vector3.left * speed;
+        }
+
+    }
 }
