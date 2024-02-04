@@ -10,14 +10,14 @@ public class Thief : MonoBehaviour
 
     void Start()
     {
-        speed = 10
-        health = 10
+        speed = 10;
+        health = 10;
     }
 
    void FixedUpdate() 
     {
-        while (Health != 0) {
-            transform.position += Time.deltaTime * Vector3.left * Speed;
+        while (health != 0) {
+            transform.position += Time.deltaTime * Vector3.left * speed;
         }
 
     }
